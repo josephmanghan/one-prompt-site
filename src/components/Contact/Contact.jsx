@@ -32,7 +32,7 @@ const Contact = () => {
 					)}
 				</span>
 			</p>
-			<div className="contact-link contact-item">
+			<div className="contact-item">
 				<LinkedInSVG />
 				<a
 					href={LINKEDIN_URL}
