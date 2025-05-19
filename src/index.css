@@ -70,3 +70,29 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.underline-link {
+	position: relative;
+	text-decoration: none;
+	background: none;
+}
+.underline-link::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0.05em;
+	height: 0.18em;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(64,224,208,0.18) 0%, rgba(64,224,208,0.18) 100%);
+	border-radius: 2px;
+	transition: height 0.28s cubic-bezier(.4,0,.2,1), background 0.28s cubic-bezier(.4,0,.2,1);
+	z-index: 0;
+}
+.underline-link:hover::after, .underline-link:focus::after {
+	height: 100%;
+	background: linear-gradient(90deg, rgba(64,224,208,0.32) 0%, rgba(64,224,208,0.32) 100%);
+}
+.text-turquoise {
+	color: #40e0d0;
+}
