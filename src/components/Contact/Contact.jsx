@@ -43,6 +43,9 @@ const Contact = () => {
 					in/josephmanghan
 				</a>
 			</div>
+			<p className="contact-blog-link">
+				This site was created in one prompt with Cursor. <a class="link-styling" href="/one-prompt-site-blog">Read more</a>.
+			</p>
 		</div>
 	);
 };
