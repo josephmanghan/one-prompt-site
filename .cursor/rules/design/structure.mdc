@@ -12,8 +12,7 @@ centering)
     Bio.jsx	        - Contains bio
     Contact.jsx         - Horizontal rule, contact section with icons and links
   /styles
-    globals.css         - Tailwind base styles and Plus Jakarta Sans font import
-    tailwind.config.js  - Tailwind configuration (extend if needed)
+    globals.css         - Base styles and Plus Jakarta Sans font import
 
 App.jsx                 - Main entry point that assembles all components
 
