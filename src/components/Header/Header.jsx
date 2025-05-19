@@ -1,12 +1,11 @@
 import React from 'react';
-import JMLogo from '../../assets/JM_logo.png';
+import JMLogo from '../../assets/jm_logo.webp';
+import './header.css';
 
 const Header = () => (
 	<div className="header-section">
-		<div>
-			<h1 className="header-title">Dr Joe Manghan</h1>
-		</div>
-		<div>
+		<div className="header-content">
+			<h1 className="header-title">Dr Joseph Manghan</h1>
 			<img
 				src={JMLogo}
 				alt="Profile"
