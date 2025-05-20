@@ -1,1 +1,25 @@
-/* Blog page styles placeholder */ 
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.blog-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 30px 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 15px;
+  }
+  
+  .blog-image {
+    margin: 20px 0;
+  }
+} 
