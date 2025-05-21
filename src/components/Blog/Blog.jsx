@@ -3,6 +3,7 @@ import './blog.css';
 import initialDesign from '../../assets/blog/initial_design.jpg';
 import badWebsiteAttempt from '../../assets/blog/bad_website_attempt.png';
 import agentWaitingForApproval from '../../assets/blog/agent_waiting_for_approval.png';
+import linkStylingFeedback from '../../assets/blog/link_styling_feedback.png';
 
 const Blog = () => (
 	<div className="blog-container">
@@ -18,6 +19,8 @@ const Blog = () => (
 		<p>I began to incorporate system prompts. These underlined best practices, code structure, design princples (I read that adding design/structure to system was helpful as it was a hollistic consideriation - find link).. but most importantly behaviour of the agent.</p>
 		<p>This led to much greater success & it was the behaviour that was the most noticeable to me. It would ask questions as it went, rather than making poor assumptions. It meant we built a website TOGETHER, built our understanding & goal together as missed questions were answered & the full picture was gradually completed.</p>
 		<img src={agentWaitingForApproval} alt="AI agent waiting for approval" className="blog-image" />
+		<p>It even asked for more clarity around link styling, even though I was aware that this unspecified and was happy for them to use their own reasoning, as I wanted to keep the prompt simple.</p>
+		<img src={linkStylingFeedback} alt="AI asking about link styling" className="blog-image" />
 		<p>Strictly speaking I myself have gone off spec as I feel this isnt really 'one prompt', but I think the lesson was that that guidance is necessary to guide what is a GREAT POWER in these tools.</p>
 		<p>SOOO much of its power comes from setup. These things are powerful, but they need coaching. At the moment at least. The ceiling is high though. d</p>
 		<p>Want I want to look up next is setting up personas (through system prompt setup) to build a more complex AI system, to boost the quality of overall code.</p>
