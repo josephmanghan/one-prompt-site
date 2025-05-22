@@ -1,29 +1,27 @@
-.blog-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
+/* Blog component specific styles */
 
+/* Blog image styles */
 .blog-image {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 20px 0;
   border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-image--shadowed {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.blog-image--outline {
+.blog-image--outlined {
   border: 1px solid #d0d0d0;
 }
 
-.blog-image--center {
+/* Center image with higher specificity to ensure it works */
+.blog-image.blog-image--centered {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (max-width: 768px) {
-  .blog-container {
-    padding: 15px;
-  }
-}

@@ -7,9 +7,9 @@ import linkStylingFeedback from '../../assets/blog/link_styling_feedback.png';
 import designMockup from '../../assets/blog/design_mockup.png';
 
 const Blog = () => (
-  <div className="blog-container">
+  <div className="blog container">
     <p>
-      My goal in this project was to improve my use of <a href="https://www.cursor.com/" className="link-styling">Cursor</a>, and develop my ability to write long-horizon prompts. Within the next year I think all developers will be orchestrating <a href="https://www.ibm.com/think/topics/ai-agents" className="link-styling">Agents</a> to navigate long-horizon tasks - that is, a task that requires a series of actions and decisions - as part of our day to day work.
+      My goal in this project was to improve my use of <a href="https://www.cursor.com/" className="link">Cursor</a>, and develop my ability to write long-horizon prompts. Within the next year I think all developers will be orchestrating <a href="https://www.ibm.com/think/topics/ai-agents" className="link">Agents</a> to navigate long-horizon tasks - that is, a task that requires a series of actions and decisions - as part of our day to day work.
     </p>
 
     <p>
@@ -28,25 +28,25 @@ const Blog = () => (
       After initializing a new React app, I started with coming up with a design. I sketched out what I had in mind and, continuing with a theme, had ChatGPT mock up my design so that it would be more readable moving forwards.
     </p>
     
-    <img src={initialDesign} alt="Initial hand-drawn design" className="blog-image" />
-    <img src={designMockup} alt="Final design mockup" className="blog-image blog-image--outline" />
+    <img src={initialDesign} alt="Initial hand-drawn design" className="blog-image blog-image--shadowed" />
+    <img src={designMockup} alt="Final design mockup" className="blog-image blog-image--shadowed blog-image--outlined" />
     
     <p>
       Next, I wrote down anything and everything I could think of - trying to capture everything required for a <i>one-prompt-site</i>.
     </p>
 
     <p>
-      Rather than running this immediately, as suggested by <a href="https://www.prompthub.us/blog/using-llms-to-optimize-your-prompts?utm_source=chatgpt.com " className="link-styling">Prompt Hub</a> I first ran this prompt past ChatGPT and asked if anything was missing or ambiguous. I was then able to iterate even before reaching the IDE. This, I believe, is a great practice when you're working in a context that has the Agent working for an extended period of time, as this inherently has a slow feedback loop.
+      Rather than running this immediately, as suggested by <a href="https://www.prompthub.us/blog/using-llms-to-optimize-your-prompts?utm_source=chatgpt.com " className="link">Prompt Hub</a> I first ran this prompt past ChatGPT and asked if anything was missing or ambiguous. I was then able to iterate even before reaching the IDE. This, I believe, is a great practice when you're working in a context that has the Agent working for an extended period of time, as this inherently has a slow feedback loop.
     </p>
     
     <p>
       Finally I was able to get the Cursor Agent to build my site. Unfortunately, after a few alteration, I wasn't happy with the result.
     </p>
     
-    <img src={badWebsiteAttempt} alt="Bad website attempt" className="blog-image blog-image--outline" />
+    <img src={badWebsiteAttempt} alt="Bad website attempt" className="blog-image blog-image--shadowed blog-image--outlined" />
     
     <p>
-      It was at this stage that I turned to <a href="https://promptengineering.org/system-prompts-in-large-language-models/" className="link-styling">system prompts</a>, in Cursor known as <a href="https://docs.cursor.com/context/rules" className="link-styling">Rules</a>.
+      It was at this stage that I turned to <a href="https://promptengineering.org/system-prompts-in-large-language-models/" className="link">system prompts</a>, in Cursor known as <a href="https://docs.cursor.com/context/rules" className="link">Rules</a>.
     </p>
 
     <p>
@@ -57,13 +57,13 @@ const Blog = () => (
       The most important change I made was a rule for the Agent to require confirmation at logical stages, and to ask questions when missing key information. This led to a much more successful outcome - both in terms of design and code quality. I was able to work with the Agent to build the website <i>together</i>.
     </p>
     
-    <img src={agentWaitingForApproval} alt="AI agent waiting for approval" className="blog-image" />
+    <img src={agentWaitingForApproval} alt="AI agent waiting for approval" className="blog-image blog-image--shadowed" />
     
     <p>
       One stand-out for me was when it asked for more clarity around link styling. I hadn't thought to provide more information for this element previously, but it prompted me to have a think and then provide clearer instruction. I was amazed it spotted this gap and knew to ask for my input in plugging it.
     </p>
     
-    <img src={linkStylingFeedback} alt="AI asking about link styling" className="blog-image blog-image--center" />
+    <img src={linkStylingFeedback} alt="AI asking about link styling" className="blog-image blog-image--shadowed blog-image--centered" />
     
     <p>
       Overall this was really fun experience and the outcome was much stronger than I hoped for. The key lesson I'll be taking away is the value in thoughtful prompting, as well as the power in treating the Agent not as an algorithm, but as a partner that I can work with.

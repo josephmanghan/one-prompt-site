@@ -1,10 +1,11 @@
-.contact-section {
+/* Contact component specific styles */
+.contact {
   margin-top: 0.5rem;
   text-align: left;
   margin-bottom: 2.2rem;
 }
 
-.contact-item {
+.contact__item {
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -15,13 +16,13 @@
   cursor: pointer;
 }
 
-.contact-email-wrapper {
+.contact__email {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.contact-tooltip {
+.contact__tooltip {
   position: absolute;
   left: 50%;
   bottom: 70%;
@@ -41,7 +42,7 @@
   user-select: none;
 }
 
-.contact-icon {
+.contact__icon {
   font-size: 1.5rem;
   color: #666;
   display: flex;
@@ -51,14 +52,14 @@
   min-height: 1.5rem;
 }
 
-.contact-copied {
+.contact__copied {
   margin-left: 0.5rem;
   color: #089e8e;
   font-size: 0.95rem;
   transition: opacity 0.2s;
 }
 
-.contact-blog-link {
+.contact__blog-link {
   font-size: 0.92rem;
   font-style: italic;
   font-family: 'Plus Jakarta Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
