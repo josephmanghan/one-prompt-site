@@ -1,1 +1,25 @@
-/* Blog page styles placeholder */ 
+/* Blog image styles */
+.blog-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-image--shadowed {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image--outlined {
+  border: 1px solid #d0d0d0;
+}
+
+/* Center image with higher specificity */
+.blog-image.blog-image--centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

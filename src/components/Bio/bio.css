@@ -1,5 +1,6 @@
-.bio-section {
-  max-width: 500px;
+/* Bio component specific styles */
+.bio {
+  /* Can use container--small class in the component */
   margin-bottom: 2rem;
   color: #222;
   font-size: 1.125rem;
