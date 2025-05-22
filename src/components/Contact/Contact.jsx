@@ -44,7 +44,7 @@ const Contact = () => {
 				</a>
 			</div>
 			<p className="contact__blog-link">
-				This site was created in one prompt with Cursor. <a className="link" href="/blog">Read more</a>.
+				This site was created in one prompt with Cursor. <a className="link" href="#/blog">Read more</a>.
 			</p>
 		</div>
 	);
