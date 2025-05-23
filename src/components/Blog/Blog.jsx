@@ -13,7 +13,7 @@ const Blog = () => (
     </p>
 
     <p>
-      For instance, "create a feature that does X & Y", or "investigate products A, B, C, consider users X & Y, and then do Z."
+      For instance, "create a feature that does X & Y", or "investigate products A, B, C, consider users X & Y, and then do S."
     </p>
 
     <p>
@@ -25,32 +25,32 @@ const Blog = () => (
     </p>
 
     <p>
-      After initializing a new React app, I started by coming up with a simple sketch. Continuing with a theme, I had ChatGPT mock up my rough design so that it would be more readable moving forwards.
+      After initializing a new React app, I started with a simple sketch. Staying true to the theme, I had ChatGPT mock up the design so that it would be more readable moving forwards. This would be used as part of the <i>one-prompt-site</i> prompt.
     </p>
     
     <img src={initialDesign} alt="Initial hand-drawn design" className="blog-image blog-image--shadowed" />
     <img src={designMockup} alt="Final design mockup" className="blog-image blog-image--shadowed blog-image--outlined" />
     
     <p>
-      Next, I wrote down anything and everything I could think of - trying to capture everything required for a <i>one-prompt-site</i> prompt.
+      Next, I wrote down anything I could think of - trying to capture everything required for the prompt.
     </p>
 
     <p>
-      Rather than running this prompt immediately, I first ran it past ChatGPT and asked if anything was missing or ambiguous (as suggested by <a href="https://www.prompthub.us/blog/using-llms-to-optimize-your-prompts?utm_source=chatgpt.com " className="link">Prompt Hub</a>). This led to iteration before even reaching the IDE - a great practice when working in a context that has the Agent working for an extended period of time, as this inherently has a slow feedback loop.
+      The result was lenghty, but rather than using it immediately, I first ran it past ChatGPT and asked if anything was missing or ambiguous (as suggested by <a href="https://www.prompthub.us/blog/using-llms-to-optimize-your-prompts?utm_source=chatgpt.com " className="link">Prompt Hub</a>). This led to iteration before even reaching the IDE - a great practice when working in a context that has the Agent working for an extended period of time, as this inherently has a slow feedback loop.
     </p>
     
     <p>
-      Finally, I prompted the Agent build my site. Unfortunately, even after a few alterations, I wasn't happy with the result.
+      Finally, I asked the Agent to build my site. Unfortunately, even after a few alterations, I wasn't happy with what was produced.
     </p>
     
     <img src={badWebsiteAttempt} alt="Bad website attempt" className="blog-image blog-image--shadowed blog-image--outlined" />
     
     <p>
-      It was at this stage that I turned to <a href="https://promptengineering.org/system-prompts-in-large-language-models/" className="link">system prompts</a>, known as <a href="https://docs.cursor.com/context/rules" className="link">Rules</a> in Cursor.
+      It was at this stage I turned to <a href="https://promptengineering.org/system-prompts-in-large-language-models/" className="link">system prompts</a>, known as <a href="https://docs.cursor.com/context/rules" className="link">Rules</a> in Cursor.
     </p>
 
     <p>
-      These things are <i>powerful</i>. They are used to customise your Agent - building knowledge, context, and even behaviour. They frame the Agent's reasoning so that it can better stick to the brief and realise your vision.
+      These <a href="https://www.promptly.fyi/library" className="link">things</a> are <i>powerful</i>. They are used to customise your Agent - building knowledge, context, and even behaviour. They frame the Agent's reasoning so that it can better stick to the brief and realise your vision.
     </p>
 
     <p>
@@ -60,13 +60,17 @@ const Blog = () => (
     <img src={agentWaitingForApproval} alt="AI agent waiting for approval" className="blog-image blog-image--shadowed" />
     
     <p>
-      A highlight for me was when it asked for more clarity around link styling. I hadn't given much information for this element previously, but it prompted me to have a think and then provide clearer instruction. I was amazed it spotted this gap and knew to ask for my input in plugging it.
+      A highlight was being asked for more clarity around link styling. I hadn't given much information for this element previously, but <i>it</i> prompted <i>me</i> to have a think and provide clearer instruction. I was amazed the Agent spotted this gap and knew to ask for my input in plugging it.
     </p>
     
     <img src={linkStylingFeedback} alt="AI asking about link styling" className="blog-image blog-image--shadowed blog-image--centered" />
     
     <p>
-      Overall this was really fun experience and the outcome was much stronger than I hoped for. The key lesson I'll be taking away is the value in thoughtful prompting, as well as the power in treating the Agent not as an algorithm, but as a partner that I can work with.
+      Overall this was a fun experience and the result was much stronger than I hoped for. The key lesson I'll be taking away is the value in thoughtful prompting, as well as the power in treating the Agent not as an algorithm, but as a partner to work with.
+    </p>
+    <hr className="divider" />
+    <p>
+      User and system prompts can be found <a href="https://github.com/josephmanghan/one-prompt-site/tree/main/.cursor/rules" className="link">here</a>.
     </p>
   </div>
 );
