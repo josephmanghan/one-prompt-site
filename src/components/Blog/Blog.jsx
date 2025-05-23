@@ -36,11 +36,11 @@ const Blog = () => (
     </p>
 
     <p>
-      Rather than running this prompt immediately, I first ran it past ChatGPT and asked if anything was missing or ambiguous (as suggested by <a href="https://www.prompthub.us/blog/using-llms-to-optimize-your-prompts?utm_source=chatgpt.com " className="link">Prompt Hub</a>). This led to iteration before even reaching the IDE - a great practice when working in a context that has the Agent working for an extended period of time, as this inherently has a slow feedback loop.
+      Rather than using this prompt immediately, I first ran it past ChatGPT and asked if anything was missing or ambiguous (as suggested by <a href="https://www.prompthub.us/blog/using-llms-to-optimize-your-prompts?utm_source=chatgpt.com " className="link">Prompt Hub</a>). This led to iteration before even reaching the IDE - a great practice when working in a context that has the Agent working for an extended period of time, as this inherently has a slow feedback loop.
     </p>
     
     <p>
-      Finally, I prompted the Agent build my site. Unfortunately, even after a few alterations, I wasn't happy with the result.
+      Finally, I prompted the Agent to build my site. Unfortunately, even after a few alterations, I wasn't happy with the result.
     </p>
     
     <img src={badWebsiteAttempt} alt="Bad website attempt" className="blog-image blog-image--shadowed blog-image--outlined" />
@@ -60,13 +60,16 @@ const Blog = () => (
     <img src={agentWaitingForApproval} alt="AI agent waiting for approval" className="blog-image blog-image--shadowed" />
     
     <p>
-      A highlight for me was when it asked for more clarity around link styling. I hadn't given much information for this element previously, but it prompted me to have a think and then provide clearer instruction. I was amazed it spotted this gap and knew to ask for my input in plugging it.
+      A highlight for me was when it asked for more clarity around link styling. I hadn't given much information for this element previously, but <i>it</i> prompted <i>me</i> to have a think and then provide clearer instruction. I was amazed it spotted this gap and knew to ask for my input in plugging it.
     </p>
     
     <img src={linkStylingFeedback} alt="AI asking about link styling" className="blog-image blog-image--shadowed blog-image--centered" />
     
     <p>
-      Overall this was really fun experience and the outcome was much stronger than I hoped for. The key lesson I'll be taking away is the value in thoughtful prompting, as well as the power in treating the Agent not as an algorithm, but as a partner that I can work with.
+      Overall this was a fun experience and the outcome was much stronger than I hoped for. The key lesson I'll be taking away is the value in thoughtful prompting, as well as the power in treating the Agent not as an algorithm, but as a partner that to work with.
+    </p>
+    <p>
+      User and system prompts can be found <a href="https://github.com/josephmanghan/one-prompt-site/tree/main/.cursor/rules" className="link">here</a>.
     </p>
   </div>
 );

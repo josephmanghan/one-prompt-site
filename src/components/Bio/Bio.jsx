@@ -18,7 +18,7 @@ const Bio = () => (
 			Right now I'm focused on the evolving AI discourse and exploring how AI can be meaningfully integrated into both product and workflow contexts.
 		</p>
 		<p>
-			Beyond development, I enjoy weightlifting, long walks, art, and the odd video game. I hold a <a
+			Beyond development, I enjoy weightlifting, long walks with my forever person, art, and the odd video game. I hold a <a
 				href={PHD_URL}
 				className="link"
 				target="_blank"
