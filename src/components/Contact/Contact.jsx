@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './contact.css';
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/josephmanghan/';
@@ -44,9 +43,6 @@ const Contact = () => {
 					in/josephmanghan
 				</a>
 			</div>
-			<p className="contact__blog-link">
-				This site was created in one prompt with Cursor. <Link className="link" to="/blog">Read more</Link>.
-			</p>
 		</div>
 	);
 };

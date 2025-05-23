@@ -27,10 +27,28 @@
   gap: 2rem;
 }
 
+.header__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__blog-link {
+  font-size: 0.92rem;
+  font-style: italic;
+  font-family: 'Plus Jakarta Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #444;
+  margin-top: 0.25rem;
+}
+
 @media (max-width: 600px) {
   .header__content {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+
+  .header__text {
+    align-items: center;
+    text-align: center;
   }
 } 
