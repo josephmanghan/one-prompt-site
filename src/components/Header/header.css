@@ -32,12 +32,17 @@
   flex-direction: column;
 }
 
-.header__blog-link {
+.header__blog-text {
   font-size: 0.92rem;
   font-style: italic;
   font-family: 'Plus Jakarta Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: #444;
   margin-top: 0.25rem;
+}
+
+.header__blog-link {
+  display: inline;
+  margin-left: 0.25rem;
 }
 
 @media (max-width: 600px) {
@@ -50,5 +55,11 @@
   .header__text {
     align-items: center;
     text-align: center;
+  }
+  
+  .header__blog-link {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.25rem;
   }
 } 
