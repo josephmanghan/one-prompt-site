@@ -72,6 +72,9 @@ const Blog = () => (
     <p>
       User and system prompts can be found <a href="https://github.com/josephmanghan/one-prompt-site/tree/main/.cursor/rules" className="link">here</a>.
     </p>
+    <p className="blog-date">
+      May, 2025
+    </p>
   </div>
 );
 
