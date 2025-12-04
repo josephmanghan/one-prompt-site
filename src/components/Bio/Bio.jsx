@@ -4,6 +4,7 @@ import './bio.css';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/josephmanghan/';
 const PHD_URL =
   'https://eprints.soton.ac.uk/443879/#:~:text=Manghan%2C%20Joseph%20Philip%20(2020),%2C%20Doctoral%20Thesis%2C%20237pp.';
+const DEVAI_CLI_URL = 'https://www.npmjs.com/package/devai-cli';
 
 const Bio = () => (
   <div className="bio container--small">
@@ -22,7 +23,16 @@ const Bio = () => (
     </p>
     <p>
       Right now I'm focused on the evolving AI discourse and exploring how AI
-      can be meaningfully integrated into both product and workflow contexts.
+      can be{' '}
+      <a
+        href={DEVAI_CLI_URL}
+        className="link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        meaningfully integrated
+      </a>{' '}
+      into both product and workflow contexts.
     </p>
     <p>
       Beyond development, I enjoy weightlifting, long walks with my forever
