@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint .",
-    "preview": "bite build && vite preview",
-    "deploy": "./scripts/deploy.sh",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "build": "vite build",
+    "pr": "npm run lint && npm run format && npm run build",
+    "preview": "npm run build && vite preview",
+    "deploy": "./scripts/deploy.sh"
   },
   "dependencies": {
     "react": "^19.1.0",
