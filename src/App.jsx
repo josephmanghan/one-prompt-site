@@ -7,20 +7,23 @@ import Blog from './components/Blog/Blog';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-	return (
-		<Router>
-			<Routes>
-				<Route path="blog" element={<Blog />} />
-				<Route path="/*" element={
-					<Wrapper>
-						<Header />
-						<Bio />
-						<Contact />
-					</Wrapper>
-				} />
-			</Routes>
-		</Router>
-	);
+  return (
+    <Router>
+      <Routes>
+        <Route path="blog" element={<Blog />} />
+        <Route
+          path="/*"
+          element={
+            <Wrapper>
+              <Header />
+              <Bio />
+              <Contact />
+            </Wrapper>
+          }
+        />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
