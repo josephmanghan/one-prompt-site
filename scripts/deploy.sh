@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Deployment script for one-prompt-site to GitHub Pages
-# Uses git subtree to push dist/ contents to josephmanghan.github.io
+# Pushes dist/ contents to josephmanghan.github.io
 
 set -e
 
@@ -24,13 +24,6 @@ if [ ! -f "package.json" ]; then
     fi
 fi
 
-# Add github-pages remote if it doesn't exist
-if ! git remote | grep -q "github-pages"; then
-    echo -e "${YELLOW}Adding github-pages remote...${NC}"
-    git remote add github-pages https://github.com/josephmanghan/josephmanghan.github.io.git
-    echo -e "${GREEN}✓ Remote added${NC}"
-fi
-
 echo -e "${YELLOW}This will:${NC}"
 echo "  1. Build the project (npm run build)"
 echo "  2. Push dist/ contents to josephmanghan.github.io main branch"
@@ -48,9 +41,24 @@ echo -e "${YELLOW}Building project...${NC}"
 npm run build
 echo -e "${GREEN}✓ Build complete${NC}"
 
-# Deploy using git subtree
+# Deploy by initializing git in dist and pushing
 echo -e "${YELLOW}Deploying to GitHub Pages...${NC}"
-git subtree push --prefix dist github-pages main
+
+# Create CNAME file if it doesn't exist
+if [ ! -f "dist/CNAME" ]; then
+    echo -e "${YELLOW}Creating CNAME file...${NC}"
+    echo "www.josephmanghan.com" > dist/CNAME
+fi
+
+cd dist
+rm -rf .git
+git init
+git remote add origin https://github.com/josephmanghan/josephmanghan.github.io.git
+git branch -M main
+git add .
+git commit -m "Deploy site - $(date)"
+git push -u origin main --force
+cd ..
 
 echo
 echo -e "${GREEN}✅ Deployment complete!${NC}"
