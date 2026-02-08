@@ -18,7 +18,13 @@ const Header = () => (
           </span>
         </p>
       </div>
-      <img src={JMLogo} alt="Profile" className="header__image" />
+      <img
+        src={JMLogo}
+        alt="Dr Joseph Manghan professional logo"
+        width="1198"
+        height="1198"
+        className="header__image"
+      />
     </div>
   </div>
 );
