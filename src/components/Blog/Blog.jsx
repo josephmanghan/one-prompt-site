@@ -10,12 +10,12 @@ const Blog = () => (
   <div className="blog container">
     <p>
       My goal in this project was to learn{' '}
-      <a href="https://www.cursor.com/" className="link">
+      <a href="https://www.cursor.com/" className="link" target="_blank" rel="noopener noreferrer">
         Cursor
       </a>
       , and develop my ability to write long-horizon prompts. Within the next
       year I think all developers will be orchestrating{' '}
-      <a href="https://www.ibm.com/think/topics/ai-agents" className="link">
+      <a href="https://www.ibm.com/think/topics/ai-agents" className="link" target="_blank" rel="noopener noreferrer">
         Agents
       </a>{' '}
       to navigate long-horizon tasks - that is, a task that requires a series of
@@ -37,7 +37,7 @@ const Blog = () => (
     </p>
 
     <p>
-      And so the idea for a <i>one-prompt-site</i> was born. Not a particularly
+      And so the idea for a <em>one-prompt-site</em> was born. Not a particularly
       practical idea, but a fun context for learning.
     </p>
 
@@ -45,17 +45,21 @@ const Blog = () => (
       After initializing a new React app, I started with a simple sketch.
       Staying true to the theme, I had ChatGPT mock up the design so that it
       would be more readable moving forwards. This would be used as part of the{' '}
-      <i>one-prompt-site</i> prompt.
+      <em>one-prompt-site</em> prompt.
     </p>
 
     <img
       src={initialDesign}
       alt="Initial hand-drawn design"
+      width="4032"
+      height="2268"
       className="blog-image blog-image--shadowed"
     />
     <img
       src={designMockup}
       alt="Final design mockup"
+      width="1024"
+      height="1024"
       className="blog-image blog-image--shadowed blog-image--outlined"
     />
 
@@ -71,6 +75,8 @@ const Blog = () => (
       <a
         href="https://www.prompthub.us/blog/using-llms-to-optimize-your-prompts?utm_source=chatgpt.com "
         className="link"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         Prompt Hub
       </a>
@@ -87,6 +93,8 @@ const Blog = () => (
     <img
       src={badWebsiteAttempt}
       alt="Bad website attempt"
+      width="2992"
+      height="1794"
       className="blog-image blog-image--shadowed blog-image--outlined"
     />
 
@@ -95,11 +103,13 @@ const Blog = () => (
       <a
         href="https://promptengineering.org/system-prompts-in-large-language-models/"
         className="link"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         system prompts
       </a>
       , known as{' '}
-      <a href="https://docs.cursor.com/context/rules" className="link">
+      <a href="https://docs.cursor.com/context/rules" className="link" target="_blank" rel="noopener noreferrer">
         Rules
       </a>{' '}
       in Cursor.
@@ -107,10 +117,10 @@ const Blog = () => (
 
     <p>
       These{' '}
-      <a href="https://www.promptly.fyi/library" className="link">
+      <a href="https://www.promptly.fyi/library" className="link" target="_blank" rel="noopener noreferrer">
         things
       </a>{' '}
-      are <i>powerful</i>. They are used to customise your Agent - building
+      are <em>powerful</em>. They are used to customise your Agent - building
       knowledge, context, and even behaviour. They frame the Agent's reasoning
       so that it can better stick to the brief and realise your vision.
     </p>
@@ -120,25 +130,29 @@ const Blog = () => (
       confirmation at logical stages, and to ask questions when missing key
       information. This led to a much more successful outcome - both in terms of
       design and code quality. I was able to work with the Agent to build the
-      website <i>together</i>.
+      website <em>together</em>.
     </p>
 
     <img
       src={agentWaitingForApproval}
       alt="AI agent waiting for approval"
+      width="932"
+      height="870"
       className="blog-image blog-image--shadowed"
     />
 
     <p>
       A highlight was being asked for more clarity around link styling. I hadn't
-      given much information for this element previously, but <i>it</i> prompted{' '}
-      <i>me</i> to have a think and provide clearer instruction. I was amazed
+      given much information for this element previously, but <em>it</em> prompted{' '}
+      <em>me</em> to have a think and provide clearer instruction. I was amazed
       the Agent spotted this gap and knew to ask for my input in plugging it.
     </p>
 
     <img
       src={linkStylingFeedback}
       alt="AI asking about link styling"
+      width="468"
+      height="80"
       className="blog-image blog-image--shadowed blog-image--centered"
     />
 
@@ -154,6 +168,8 @@ const Blog = () => (
       <a
         href="https://github.com/josephmanghan/one-prompt-site/tree/main/.cursor/rules"
         className="link"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         here
       </a>
