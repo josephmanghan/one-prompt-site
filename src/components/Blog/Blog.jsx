@@ -10,12 +10,22 @@ const Blog = () => (
   <div className="blog container">
     <p>
       My goal in this project was to learn{' '}
-      <a href="https://www.cursor.com/" className="link" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.cursor.com/"
+        className="link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Cursor
       </a>
       , and develop my ability to write long-horizon prompts. Within the next
       year I think all developers will be orchestrating{' '}
-      <a href="https://www.ibm.com/think/topics/ai-agents" className="link" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.ibm.com/think/topics/ai-agents"
+        className="link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Agents
       </a>{' '}
       to navigate long-horizon tasks - that is, a task that requires a series of
@@ -37,8 +47,8 @@ const Blog = () => (
     </p>
 
     <p>
-      And so the idea for a <em>one-prompt-site</em> was born. Not a particularly
-      practical idea, but a fun context for learning.
+      And so the idea for a <em>one-prompt-site</em> was born. Not a
+      particularly practical idea, but a fun context for learning.
     </p>
 
     <p>
@@ -109,7 +119,12 @@ const Blog = () => (
         system prompts
       </a>
       , known as{' '}
-      <a href="https://docs.cursor.com/context/rules" className="link" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://docs.cursor.com/context/rules"
+        className="link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Rules
       </a>{' '}
       in Cursor.
@@ -117,7 +132,12 @@ const Blog = () => (
 
     <p>
       These{' '}
-      <a href="https://www.promptly.fyi/library" className="link" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.promptly.fyi/library"
+        className="link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         things
       </a>{' '}
       are <em>powerful</em>. They are used to customise your Agent - building
@@ -143,9 +163,10 @@ const Blog = () => (
 
     <p>
       A highlight was being asked for more clarity around link styling. I hadn't
-      given much information for this element previously, but <em>it</em> prompted{' '}
-      <em>me</em> to have a think and provide clearer instruction. I was amazed
-      the Agent spotted this gap and knew to ask for my input in plugging it.
+      given much information for this element previously, but <em>it</em>{' '}
+      prompted <em>me</em> to have a think and provide clearer instruction. I
+      was amazed the Agent spotted this gap and knew to ask for my input in
+      plugging it.
     </p>
 
     <img

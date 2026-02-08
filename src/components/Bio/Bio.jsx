@@ -1,42 +1,37 @@
-import React from 'react';
 import './bio.css';
 
-const LINKEDIN_URL = 'https://www.linkedin.com/in/josephmanghan/';
 const PHD_URL =
   'https://eprints.soton.ac.uk/443879/#:~:text=Manghan%2C%20Joseph%20Philip%20(2020),%2C%20Doctoral%20Thesis%2C%20237pp.';
 const DEVAI_CLI_URL = 'https://www.npmjs.com/package/devai-cli';
+const GEM_FACTORY_URL = 'https://github.com/josephmanghan/gem-factory';
 
 const Bio = () => (
   <div className="bio container--small">
     <p>
-      I'm Joe – a{' '}
+      I'm Joe – a software engineer specializing in context engineering and
+      spec-driven development, building{' '}
       <a
-        href={LINKEDIN_URL}
+        href={GEM_FACTORY_URL}
         className="link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Frontend Developer
+        infrastructure
       </a>{' '}
-      who enjoys writing clean, scalable code, and thoughtful UX. I work on
-      authentication and identity solutions within digital banking.
-    </p>
-    <p>
-      Right now I'm focused on the evolving AI discourse and exploring how AI
-      can be{' '}
+      and{' '}
       <a
         href={DEVAI_CLI_URL}
         className="link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        meaningfully integrated
+        tooling
       </a>{' '}
-      into both product and workflow contexts.
+      that bring agents meaningfully into the SDLC.
     </p>
     <p>
-      Beyond development, I enjoy weightlifting, long walks with my forever
-      person, art, and the odd video game. I hold a{' '}
+      Beyond development, I enjoy weightlifting, reading, and long walks with my
+      forever person. I hold a{' '}
       <a
         href={PHD_URL}
         className="link"

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './contact.css';
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/josephmanghan/';
@@ -43,35 +43,8 @@ const GitHubSVG = () => (
 );
 
 const Contact = () => {
-  const [copied, setCopied] = useState(false);
-  const [hovered, setHovered] = useState(false);
-  const handleCopy = () => {
-    navigator.clipboard.writeText('josephmanghan@gmail.com');
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1000);
-  };
   return (
     <div className="contact">
-      <p
-        onClick={handleCopy}
-        onKeyDown={(e) => e.key === 'Enter' && handleCopy()}
-        tabIndex={0}
-        role="button"
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-        className="contact__item"
-        aria-label="Copy email address"
-      >
-        <span className="material-icons contact__icon">mail</span>
-        <span className="contact__email">
-          <span>josephmanghan@gmail.com</span>
-          {(hovered || copied) && (
-            <span className="contact__tooltip">
-              {copied ? 'Copied!' : 'Copy to clipboard'}
-            </span>
-          )}
-        </span>
-      </p>
       <div className="contact__item">
         <LinkedInSVG />
         <a

@@ -23,8 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 
-# Claude Code settings
+# Claude Code
 .claude/settings.json
+.claude/skills/
 
 # Specs
 dev/
