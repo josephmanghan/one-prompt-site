@@ -4,6 +4,7 @@ const PHD_URL =
   'https://eprints.soton.ac.uk/443879/#:~:text=Manghan%2C%20Joseph%20Philip%20(2020),%2C%20Doctoral%20Thesis%2C%20237pp.';
 const DEVAI_CLI_URL = 'https://www.npmjs.com/package/devai-cli';
 const GEM_FACTORY_URL = 'https://github.com/josephmanghan/gem-factory';
+const SKILLS_URL = 'https://github.com/josephmanghan/manghan-skills';
 
 const Bio = () => (
   <div className="bio container--small">
@@ -17,8 +18,8 @@ const Bio = () => (
         rel="noopener noreferrer"
       >
         infrastructure
-      </a>{' '}
-      and{' '}
+      </a>
+      ,{' '}
       <a
         href={DEVAI_CLI_URL}
         className="link"
@@ -26,6 +27,15 @@ const Bio = () => (
         rel="noopener noreferrer"
       >
         tooling
+      </a>
+      , and{' '}
+      <a
+        href={SKILLS_URL}
+        className="link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        skills
       </a>{' '}
       that bring agents meaningfully into the SDLC.
     </p>
